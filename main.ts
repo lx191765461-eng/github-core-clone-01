@@ -1,3 +1,11 @@
+// Entry kept as shipped by the kit's starter: the lifecycle below (bind an
+// ephemeral port, register it with the env, poll /done, exit 0) belongs to
+// the harness, not the contest. The forge itself lives in app.ts; this file
+// only wires the server app.ts builds into that lifecycle.
+//
+// (Added by the entry's own build session: the starter's main.ts is otherwise
+// unchanged.)
+
 // The entry <-> env lifecycle, as env/src/wire.ts settles it: bind an ephemeral port, tell the env the
 // port it bound, then poll until the env says the trial is over and exit 0. Keep this file as it is:
 // the suite scores the server app.ts builds, and the lifecycle is the harness's, not the contest's.
